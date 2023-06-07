@@ -6,7 +6,7 @@ module Api
     class MessagesController < ApplicationController
       def index
         @message = Message.order('RANDOM()').first
-        render json: { greetings: @message.greetings }
+        render json: { message: @message.greetings }
       end
     end
   end
