@@ -19,7 +19,7 @@ export const fetchGreeting = createAsyncThunk(
     } catch (e) {
       return e.message;
     }
-  }
+  },
 );
 
 const greetingSlice = createSlice({
